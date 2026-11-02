@@ -28,13 +28,13 @@ if __name__ == "__main__":
 
     # Adding 5 event objects
     # Appending each of the events to their respective list
-    events1 = Event("workshop", 1, "Python Workshop", date_type(2026, 12, 10), time(10, 0), 50, venue1, False, 15.00)
+    events1 = Event("workshop", 1, "Python Workshop", date_type(2026, 12, 10), time(10, 0), 50, venue1, True, 15.00)
     events.append(events1)
     events2 = Event("open day", 2, "DKiT Open Day", date_type(2026, 12, 15), time(11, 0), 150, venue2, False, 0.00)
     events.append(events2)
     events3 = Event("conference", 3, "Technology Conference", date_type(2027, 1, 20), time(9, 30), 300, venue2, False,25.00)
     events.append(events3)
-    event4 = Event("convention", 4, "Coding convention", date_type(2027, 2, 5), time(12, 0), 90, venue3, False, 20.00)
+    event4 = Event("convention", 4, "Coding convention", date_type(2027, 2, 5), time(12, 0), 90, venue3, True, 20.00)
     events.append(event4)
     event5 = Event("workshop", 5, "Science convention", date_type(2027, 2, 15), time(14, 0), 40, venue1, False, 10.00)
     events.append(event5)
@@ -98,10 +98,12 @@ if __name__ == "__main__":
             booking.cancelled = False
 
     # displaying all attendees
+    print("All attendees")
     for attendee in attendees:
         print(attendee)
 
     # displaying all bookings
+    print("All bookings")
     for booking in bookings:
         print(booking)
 
