@@ -97,8 +97,17 @@ if __name__ == "__main__":
     bookings.append(booking4)
     bookings.append(booking5)
 
+    # displaying all attendees
     for attendee in attendees:
         print(attendee)
 
+    # displaying all bookings
     for booking in bookings:
         print(booking)
+
+    #  Find and display all bookings for a specific Attendee
+    print("Specific attendee")
+    specific_attendee = attendees[0]
+    for booking in bookings:
+        if booking.attendee == specific_attendee:
+            print(booking)
