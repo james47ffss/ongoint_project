@@ -113,6 +113,13 @@ if __name__ == "__main__":
         if not booking.cancelled:
             print(booking)
 
+    # display all canceled booking
+    print("Cancelled Bookings")
+
+    for booking in bookings:
+        if booking.cancelled == True:
+            print(booking)
+
     #  Find and display all bookings for a specific Attendee
     print("Specific attendee")
     specific_attendee = attendees[0]
