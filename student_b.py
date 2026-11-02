@@ -154,7 +154,7 @@ class Booking: # creates a class called Booking
         return (
             f"Booking ID: {self.booking_id}, "
             f"Attendee: {self.attendee.name}, "
-            f"Event: {self.event.name}, "
+            f"Event: {self.event.title}, "
             f"Date: {self.booking_date}, "
             f"Status: {status}"
         )

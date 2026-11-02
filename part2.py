@@ -97,5 +97,8 @@ if __name__ == "__main__":
     bookings.append(booking4)
     bookings.append(booking5)
 
+    for attendee in attendees:
+        print(attendee)
 
-    
+    for booking in bookings:
+        print(booking)
