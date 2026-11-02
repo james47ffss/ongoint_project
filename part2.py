@@ -55,7 +55,7 @@ if __name__ == "__main__":
         if not event.cancelled:
             print(event)
 #------------------------------------------------------
-    # Person A - Adam Gorman Devlin
+    # Person B - Adam Gorman Devlin
     # D00294545
     # CA1 Object-Oriented Programming
     # Classes for Attendee and Booking
@@ -90,39 +90,38 @@ if __name__ == "__main__":
     bookings.append(booking4)
     bookings.append(booking5)
 
-    # cancelling a booking if a booking is cancelled
-    for booking in bookings:
-        if booking.event.cancelled:
-            booking.cancelled = True
+    # cancelling a booking if a booking is canceled
+    for booking in bookings: # goes through every booking in the bookings list
+        if booking.event.cancelled: # checks if the event linked to the booking is canceled
+            booking.cancelled = True # marks the booking as canceled
         else:
-            booking.cancelled = False
+            booking.cancelled = False # marks the booking as not canceled
 
     # displaying all attendees
     print("All attendees")
-    for attendee in attendees:
-        print(attendee)
+    for attendee in attendees: # goes through every attendee in the attendees list
+        print(attendee) # displays the attendee's details
 
     # displaying all bookings
     print("All bookings")
-    for booking in bookings:
-        print(booking)
+    for booking in bookings: # goes through every booking in the bookings list
+        print(booking) # displays the booking's details
 
     # displaying all active bookings
     print("Active bookings")
-    for booking in bookings:
-        if not booking.cancelled:
-            print(booking)
+    for booking in bookings: # goes through every booking in the bookings list
+        if not booking.cancelled: # checks if the booking is not canceled
+            print(booking) # displays the active booking
 
     # display all canceled booking
     print("Cancelled Bookings")
-
-    for booking in bookings:
-        if booking.cancelled == True:
-            print(booking)
+    for booking in bookings: # goes through every booking in the bookings list
+        if booking.cancelled == True: # checks if the booking has been canceled
+            print(booking) # displays the canceled booking
 
     #  Find and display all bookings for a specific Attendee
     print("Specific attendee")
-    specific_attendee = attendees[0]
-    for booking in bookings:
-        if booking.attendee == specific_attendee:
-            print(booking)
+    specific_attendee = attendees[0] # selects the first attendee from the attendees list
+    for booking in bookings: # goes through every booking in the bookings list
+        if booking.attendee == specific_attendee: # checks if the booking belongs to the selected attendee
+            print(booking) # displays the matching booking

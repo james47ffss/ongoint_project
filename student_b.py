@@ -1,4 +1,4 @@
-# Person A - Adam Gorman Devlin
+# Person B - Adam Gorman Devlin
 # D00294545
 # CA1 Object-Oriented Programming
 # Classes for Attendee and Booking
