@@ -32,8 +32,7 @@ if __name__ == "__main__":
     events.append(events1)
     events2 = Event("open day", 2, "DKiT Open Day", date_type(2026, 12, 15), time(11, 0), 150, venue2, False, 0.00)
     events.append(events2)
-    events3 = Event("conference", 3, "Technology Conference", date_type(2027, 1, 20), time(9, 30), 300, venue2, False,
-                    25.00)
+    events3 = Event("conference", 3, "Technology Conference", date_type(2027, 1, 20), time(9, 30), 300, venue2, False,25.00)
     events.append(events3)
     event4 = Event("convention", 4, "Coding convention", date_type(2027, 2, 5), time(12, 0), 90, venue3, False, 20.00)
     events.append(event4)
@@ -51,7 +50,7 @@ if __name__ == "__main__":
         print(venue)
 
     # If and else statements for either if the event is cancelled or it wasn't cancelled
-    if event5.cancel_event():
+    if event.cancel_event():
         print("Event cancelled")
     else:
         print("Event was not cancelled")
