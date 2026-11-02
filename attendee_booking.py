@@ -15,11 +15,11 @@ attendees.append(attendee3)
 bookings = []
 
 # bookings
-booking1 = booking(1, attendees[0], event[0], date())
-booking2 = booking(2, attendees[1], event[1], date())
-booking3 = Booking(3, attendees[2], events[2], date())
-booking4 = Booking(4, attendees[0], events[3], date())
-booking5 = Booking(5, attendees[1], events[4], date())
+booking1 = booking(1, attendees[0], event[0], date(2026, 12, 10, time(10, 0)))
+booking2 = booking(2, attendees[1], event[1], date(2026, 12, 15, time(11, 0)))
+booking3 = Booking(3, attendees[2], events[2], date(2027, 1, 20, time(9, 30)))
+booking4 = Booking(4, attendees[0], events[3], date(2027, 2, 5, time(12, 0)))
+booking5 = Booking(5, attendees[1], events[4], date(2027, 2, 15, time(14, 0)))
 
 # adding bookings to list
 bookings.append(booking1)
