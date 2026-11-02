@@ -50,10 +50,11 @@ if __name__ == "__main__":
         print(venue)
 
     # If and else statements for either if the event is cancelled or it wasn't cancelled
-    if event.cancel_event():
-        print("Event cancelled")
-    else:
-        print("Event was not cancelled")
+    for event in events:
+        if event.cancel_event():
+            print(f"Event {event._event_id} cancelled")
+        else:
+            print(f"Event {event._event_id} was not cancelled")
 
     # Header for active events
     print("Active events")
