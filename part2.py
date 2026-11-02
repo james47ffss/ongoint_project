@@ -62,6 +62,11 @@ if __name__ == "__main__":
         if not event.cancelled:
             print(event)
 #------------------------------------------------------
+    # Person A - Adam Gorman Devlin
+    # D00294545
+    # CA1 Object-Oriented Programming
+    # Classes for Attendee and Booking
+
     # list for storing the attendees
     attendees = []
 
