@@ -49,13 +49,6 @@ if __name__ == "__main__":
     for venue in venues:
         print(venue)
 
-    # If and else statements for either if the event is cancelled or it wasn't cancelled
-    for event in events:
-        if event.cancel_event():
-            print(f"Event {event._event_id} cancelled")
-        else:
-            print(f"Event {event._event_id} was not cancelled")
-
     # Header for active events
     print("Active events")
     for event in events:
@@ -97,6 +90,13 @@ if __name__ == "__main__":
     bookings.append(booking4)
     bookings.append(booking5)
 
+    # cancelling a booking if a booking is cancelled
+    for booking in bookings:
+        if booking.event.cancelled:
+            booking.cancelled = True
+        else:
+            booking.cancelled = False
+
     # displaying all attendees
     for attendee in attendees:
         print(attendee)
@@ -104,6 +104,12 @@ if __name__ == "__main__":
     # displaying all bookings
     for booking in bookings:
         print(booking)
+
+    # displaying all active bookings
+    print("Active bookings")
+    for booking in bookings:
+        if not booking.cancelled:
+            print(booking)
 
     #  Find and display all bookings for a specific Attendee
     print("Specific attendee")
