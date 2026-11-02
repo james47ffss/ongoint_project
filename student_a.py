@@ -1,4 +1,4 @@
-# Person A - Dilyan Savov
+# Student A - Dilyan Savov
 # D00290447
 # CA1 Object-Oriented Programming
 # Classes for event and venue
