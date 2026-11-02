@@ -1,3 +1,8 @@
+# Person A - Adam Gorman Devlin
+# D00294545
+# CA1 Object-Oriented Programming
+# Classes for Attendee and Booking
+
 class Attendee: #creates a class called Attendee
 
     # function for defining the class
@@ -85,8 +90,7 @@ if __name__ == "__main__":
 from student_a import Event
 
 # Imports the date type from Python's datetime library
-from datetime import
-
+from datetime import date
 
 class Booking: # creates a class called Booking
 
