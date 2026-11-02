@@ -41,12 +41,12 @@ events.append(event5)
 # Header for all events
 print("All events:")
 for event in events:
-    print(events)
+    print(event)
 
 # Header for all venues
 print("All venues:")
 for venue in venues:
-    print(venues)
+    print(venue)
 
 # If and else statements for either if the event is cancelled or it wasn't cancelled
 if event5.cancel_event():
