@@ -39,12 +39,6 @@ if __name__ == "__main__":
     # CA1 Object-Oriented Programming
     # Events and Venues PART 2
 
-    # Importing Event and Venue classes from file student_a
-    from student_a import Event, Venue
-
-    # Importing date and time
-    from datetime import date as date_type, time
-
     # Storing the venues in a list
     venues = []
 
